@@ -12,7 +12,7 @@ module Less
       config.before_initialize do |app|
         require 'less'
         require 'less-rails'
-        Sprockets::Engines #force autoloading
+        #Sprockets::Engines #force autoloading
         Sprockets.register_engine '.less', LessTemplate
       end
 
